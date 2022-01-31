@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+    --vodka-UI-background-color: white;
+    --vodka-UI-heading-color: #333333;
+    --vodka-UI-text-color: #525252;
+    font-family: Roboto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--vodka-UI-background-color);
+}
+
+.content-heading {
+    color: var(--vodka-UI-heading-color);
+    font-weight: bolder;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    opacity: 0.7;
+}
+
+.content-main {
+    margin-left: 1.7rem;
+    margin-right: 1.8rem;
+}
+
+.content-paragraph {
+    color: var(--vodka-UI-text-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+iframe {
+    margin-top: 2rem;
+    width: 97%;
+}
+
+
+/* profile avatar */
+
+.avatar {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.example-div {
+    display: flex;
+    width: 96%;
+    justify-content: center;
+    align-items: center;
+    min-height: 8rem;
+    background-color: #ebebeb;
+    border-radius: 1.2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.example-div img {
+    margin-left: 2rem;
+}
