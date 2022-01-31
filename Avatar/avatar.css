@@ -22,6 +22,49 @@
 
 html {
     background-color: var(--vodka-UI-background-color);
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+.nav-header {
+    display: flex;
+    height: 8rem;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: var(--vodka-UI-heading-color);
+    font-weight: bolder;
+    opacity: 0.7;
+}
+
+.nav-items a:hover,
+.nav-items a.active {
+    opacity: 1;
+}
+
+.nav-header img {
+    height: 7rem;
+    margin-left: 3rem;
+}
+
+.nav-items {
+    width: 18rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+}
+
+.left-right-combine {
+    display: flex;
+    /* background-color: blue; */
+    width: 98vw;
+}
+
+.right-side-of-page {
+    flex-grow: 1;
 }
 
 .content-heading {
@@ -32,9 +75,50 @@ html {
     opacity: 0.7;
 }
 
+.index-of-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+    position: static;
+    top: 0px;
+    display: none;
+}
+
+.index-heading {
+    color: var(--vodka-UI-heading-color);
+    font-weight: bolder;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.index-of-component ul li {
+    list-style-type: none;
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.2rem;
+}
+
+.index-of-component ul li a {
+    text-decoration: none;
+    color: var(--vodka-UI-text-color);
+    font-weight: bolder;
+    opacity: 0.6;
+}
+
+.index-of-component ul li a:hover {
+    opacity: 1;
+}
+
+.index-of-component li a.active {
+    opacity: 1;
+}
+
 .content-main {
     margin-left: 1.7rem;
     margin-right: 1.8rem;
+    position: sticky;
 }
 
 .content-paragraph {
@@ -42,6 +126,29 @@ html {
     font-weight: 500;
     font-size: 1.2rem;
     opacity: 0.7;
+}
+
+
+/* footer */
+
+footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--vodka-UI-heading-color);
+    font-weight: bolder;
+    opacity: 0.5;
+}
+
+footer a:hover {
+    opacity: 1;
 }
 
 iframe {

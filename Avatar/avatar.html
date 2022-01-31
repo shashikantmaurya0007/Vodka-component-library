@@ -10,85 +10,116 @@
 </head>
 
 <body>
-    <main class="content-main">
-        <h1 class="content-heading">Avatar</h1>
-        <p class="content-paragraph">
-            Avatars are images that users can set as their profile picture. On GitHub, they're always going to be rounded squares. They can be custom photos, uploaded by users, or generated as Identicons as a placeholder.
-        </p>
-        <h1 class="content-heading">Profile Avatar</h1>
-        <p class="content-paragraph">
-            Profile avatars can be created by adding class
-            <span class="highlight-word">avatar</span> in img tag.
-        </p>
-        <div class="example-div">
-            <img class="avatar" src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&au" alt="profile avatar" />
-            <img src="https://www.absolut.com/globalassets/images/products/absolut-citron/absolut-citron_1x1.jpg" class="avatar" alt="profile avatar" />
-            <img src="https://www.ciroc.com/images/en-row/recipes/blue-stone-champagne-cosmo-bottle-drinks.webp" class="avatar" alt="profile pic" />
+    <nav class="nav-header">
+        <img src="../Images/component-logo.svg" alt="vodka-ui" />
+        <div class="nav-items">
+            <a href="#">Installation</a>
+            <a class="active" href="#">Docs</a>
+            <a href="#">Releases</a>
         </div>
-        <code class="carbon-code">
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1593085512500-5d55148d6f0d%253Fixid%253DMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%25253D%2526ixlib%253Drb-1.2.1%2526au%2522%2520alt%253D%2522profile%2520avatar%2522%2520%252F%253E"
-          style="
-            width: 97%;
-            height: 241px;
-            border: 0;
-            transform: scale(1);
-            overflow: hidden;
-          "
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
-      </code>
-        <h1 class="content-heading">Sizes Avatar</h1>
-        <p class="content-paragraph">
-            Size of the avatars can be changed by adding
-            <span class="highlight-word">small|medium|large </span> along with
-            <span class="highlight-word">avatar</span> class
-        </p>
-        <div class="example-div">
-            <img class="avatar large" src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&au" alt="profile avatar" />
-            <img class="avatar medium" src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&au" alt="profile avatar" />
-            <img class="avatar small" src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&au" alt="profile avatar" />
-        </div>
-        <code class="carbon-code">
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520class%253D%2522avatar%2520large%2522%2520src%253D%2522url%2520of%2520image%2522alt%253D%2522profile%2520avatar%2522%2520%252F%253E%250A%2520%253Cimg%2520class%253D%2522avatar%2520medium%2522%2520src%253D%2522url%2520of%2520image%2522alt%253D%2522profile%2520avatar%2522%2520%252F%253E%250A%2520%253Cimg%2520class%253D%2522avatar%2520small%2522%2520src%253D%2522url%2520of%2520image%2522alt%253D%2522profile%2520avatar%2522%2520%252F%253E%2520%2520"
-          style="
-            width: 97%;
-            height: 240px;
-            border: 0;
-            transform: scale(1);
-            overflow: hidden;
-          "
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
-      </code>
-        <h1 class="content-heading">Square Avatar</h1>
-        <p class="content-paragraph">
-            Adding <span class="highlight-word">square</span> class to your existing
-            <span class="highlight-word">avatar</span> class will create square avatars.
-        </p>
-        <div class="example-div">
-            <img class="avatar square large" src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&au" alt="profile avatar" />
-            <img src="https://www.absolut.com/globalassets/images/products/absolut-citron/absolut-citron_1x1.jpg" class="avatar square medium" alt="profile avatar" />
-            <img src="https://www.ciroc.com/images/en-row/recipes/blue-stone-champagne-cosmo-bottle-drinks.webp" class="avatar square small" alt="profile pic" />
-        </div>
-        <code class="carbon-code">
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520class%253D%2522avatar%2520square%2520large%2522%2520src%253D%2522url%2520of%2520image%2522alt%253D%2522profile%2520avatar%2522%2520%252F%253E%250A%2520%253Cimg%2520class%253D%2522avatar%2520square%2520medium%2522%2520src%253D%2522url%2520of%2520image%2522alt%253D%2522profile%2520avatar%2522%2520%252F%253E%250A%2520%253Cimg%2520class%253D%2522avatarsquare%2520small%2522%2520src%253D%2522url%2520of%2520image%2522alt%253D%2522profile%2520avatar%2522%2520%252F%253E%2520%2520"
-          style="
-            width: 97%;
-            height: 240px;
-            border: 0;
-            transform: scale(1);
-            overflow: hidden;
-          "
-          sandbox="allow-scripts allow-same-origin"
-        >
-        </iframe>
-      </code>
-    </main>
+    </nav>
+    <section class="left-right-combine">
+        <aside class="index-of-component">
+            <h1 class="index-heading">Components</h1>
+            <ul>
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#" class="active">Avatar</a></li>
+                <li><a href="#">Alert</a></li>
+                <li><a href="#">Badge</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Card</a></li>
+                <li><a href="#">Image</a></li>
+                <li><a href="#">Input</a></li>
+                <li><a href="#">List</a></li>
+                <li><a href="#">Toast</a></li>
+            </ul>
+        </aside>
+        <section class="right-side-of-page">
+            <main class="content-main">
+                <h1 class="content-heading">Avatar</h1>
+                <p class="content-paragraph">
+                    Avatars are images that users can set as their profile picture. On GitHub, they're always going to be rounded squares. They can be custom photos, uploaded by users, or generated as Identicons as a placeholder.
+                </p>
+                <h1 class="content-heading">Profile Avatar</h1>
+                <p class="content-paragraph">
+                    Profile avatars can be created by adding class
+                    <span class="highlight-word">avatar</span> in img tag.
+                </p>
+                <div class="example-div">
+                    <img class="avatar" src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&au" alt="profile avatar" />
+                    <img src="https://www.absolut.com/globalassets/images/products/absolut-citron/absolut-citron_1x1.jpg" class="avatar" alt="profile avatar" />
+                    <img src="https://www.ciroc.com/images/en-row/recipes/blue-stone-champagne-cosmo-bottle-drinks.webp" class="avatar" alt="profile pic" />
+                </div>
+                <code class="carbon-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1593085512500-5d55148d6f0d%253Fixid%253DMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%25253D%2526ixlib%253Drb-1.2.1%2526au%2522%2520alt%253D%2522profile%2520avatar%2522%2520%252F%253E"
+              style="
+                width: 97%;
+                height: 241px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </code>
+                <h1 class="content-heading">Sizes Avatar</h1>
+                <p class="content-paragraph">
+                    Size of the avatars can be changed by adding
+                    <span class="highlight-word">small|medium|large </span> along with
+                    <span class="highlight-word">avatar</span> class
+                </p>
+                <div class="example-div">
+                    <img class="avatar large" src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&au" alt="profile avatar" />
+                    <img class="avatar medium" src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&au" alt="profile avatar" />
+                    <img class="avatar small" src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&au" alt="profile avatar" />
+                </div>
+                <code class="carbon-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520class%253D%2522avatar%2520large%2522%2520src%253D%2522url%2520of%2520image%2522alt%253D%2522profile%2520avatar%2522%2520%252F%253E%250A%2520%253Cimg%2520class%253D%2522avatar%2520medium%2522%2520src%253D%2522url%2520of%2520image%2522alt%253D%2522profile%2520avatar%2522%2520%252F%253E%250A%2520%253Cimg%2520class%253D%2522avatar%2520small%2522%2520src%253D%2522url%2520of%2520image%2522alt%253D%2522profile%2520avatar%2522%2520%252F%253E%2520%2520"
+              style="
+                width: 97%;
+                height: 240px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </code>
+                <h1 class="content-heading">Square Avatar</h1>
+                <p class="content-paragraph">
+                    Adding <span class="highlight-word">square</span> class to your existing <span class="highlight-word">avatar</span> class will create square avatars.
+                </p>
+                <div class="example-div">
+                    <img class="avatar square large" src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&au" alt="profile avatar" />
+                    <img src="https://www.absolut.com/globalassets/images/products/absolut-citron/absolut-citron_1x1.jpg" class="avatar square medium" alt="profile avatar" />
+                    <img src="https://www.ciroc.com/images/en-row/recipes/blue-stone-champagne-cosmo-bottle-drinks.webp" class="avatar square small" alt="profile pic" />
+                </div>
+                <code class="carbon-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cimg%2520class%253D%2522avatar%2520square%2520large%2522%2520src%253D%2522url%2520of%2520image%2522alt%253D%2522profile%2520avatar%2522%2520%252F%253E%250A%2520%253Cimg%2520class%253D%2522avatar%2520square%2520medium%2522%2520src%253D%2522url%2520of%2520image%2522alt%253D%2522profile%2520avatar%2522%2520%252F%253E%250A%2520%253Cimg%2520class%253D%2522avatarsquare%2520small%2522%2520src%253D%2522url%2520of%2520image%2522alt%253D%2522profile%2520avatar%2522%2520%252F%253E%2520%2520"
+              style="
+                width: 97%;
+                height: 240px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </code>
+            </main>
+            <footer>
+                <a href="#">
+                    <-Introduction</a>
+                        <a href="#">Alert-></a>
+            </footer>
+        </section>
+    </section>
 </body>
 
 </html>
