@@ -8,6 +8,10 @@
     --highlight-word: black;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .highlight-word {
     color: black;
     font-weight: bolder;
@@ -24,7 +28,7 @@
 html {
     background-color: var(--vodka-UI-background-color);
     scroll-behavior: smooth;
-    /* font-size: 75%; */
+    /* font-size: 85%; */
 }
 
 
@@ -59,4 +63,191 @@ html {
     display: flex;
     justify-content: space-around;
     margin-left: auto;
+}
+
+
+/* contentstyle */
+
+.left-right-combine {
+    display: flex;
+    /* background-color: blue; */
+    width: 98vw;
+}
+
+.index-of-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    /* background-color: white; */
+    /* display: none; */
+}
+
+.index-heading {
+    color: var(--vodka-UI-heading-color);
+    font-weight: bolder;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.index-of-component ul li {
+    list-style-type: none;
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.2rem;
+}
+
+.index-of-component ul li a {
+    text-decoration: none;
+    color: var(--vodka-UI-text-color);
+    font-weight: bolder;
+    opacity: 0.6;
+}
+
+.index-of-component ul li a:hover {
+    opacity: 1;
+}
+
+.index-of-component li a.active {
+    opacity: 1;
+}
+
+.right-side-of-page {
+    flex-grow: 1;
+}
+
+.content-main {
+    margin-left: 1.7rem;
+    margin-right: 1.8rem;
+    min-height: 60vh;
+}
+
+.content-heading {
+    color: var(--vodka-UI-heading-color);
+    font-weight: bolder;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    opacity: 0.7;
+}
+
+.content-paragraph {
+    color: var(--vodka-UI-text-color);
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.alert-example-div {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    min-height: 8rem;
+    background-color: #ebebeb;
+    border-radius: 1.2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-top: 1rem;
+}
+
+.carbon-code {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* simple alert */
+
+.alert {
+    min-height: 2.5rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    padding-left: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-size: 0.9rem;
+}
+
+.primary {
+    background-color: rgba(58, 236, 236, 0.616);
+}
+
+.error {
+    background-color: rgb(238, 105, 105);
+}
+
+.success {
+    background-color: rgb(26, 221, 26);
+}
+
+.warning {
+    background-color: rgb(212, 212, 100);
+}
+
+
+/* outline alert */
+
+.outline-primary {
+    color: blue;
+    border: 2px solid blue;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.outline-error {
+    color: red;
+    border: 2px solid red;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.outline-success {
+    color: green;
+    border: 2px solid green;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.outline-warning {
+    color: yellow;
+    border: 2px solid yellow;
+    background-color: white;
+    font-weight: bolder;
+}
+
+
+/* footer */
+
+footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--vodka-UI-heading-color);
+    font-weight: bolder;
+    opacity: 0.5;
+}
+
+footer a:hover {
+    opacity: 1;
+}
+
+
+/* arrow button to direct upward */
+
+.direct-upward {
+    font-size: 3rem;
+    position: fixed;
+    bottom: 10%;
+    right: 1%;
+    opacity: 0.5;
 }
