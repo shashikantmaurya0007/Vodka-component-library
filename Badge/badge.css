@@ -141,15 +141,65 @@ html {
     opacity: 0.7;
 }
 
-.alert-example-div {
+.example-div {
     display: flex;
-    flex-direction: column;
     width: 96%;
+    justify-content: center;
+    align-items: center;
     min-height: 8rem;
     background-color: #ebebeb;
     border-radius: 1.2rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* badge styling */
+
+.badge {
+    width: max-content;
+    position: relative;
+    margin-left: 0.5rem;
+}
+
+.avatar.large+.status-badge {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.15rem;
+    right: 0.35rem;
+}
+
+.avatar.medium+.status-badge {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.15rem;
+    right: 0.1rem;
+}
+
+.avatar.small+.status-badge {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.1rem;
+    right: 0.01rem;
+}
+
+.online {
+    background-color: green;
+}
+
+.offline {
+    background-color: gray;
+}
+
+.do-not-disturb {
+    background-color: red;
 }
 
 .carbon-code {
@@ -158,64 +208,27 @@ html {
 }
 
 
-/* simple alert */
+/* avatar style for badge */
 
-.alert {
-    min-height: 2.5rem;
-    margin: 1rem;
-    border-radius: 0.5rem;
-    color: white;
-    padding-left: 2rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    font-size: 0.9rem;
+.avatar {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
 }
 
-.primary {
-    background-color: rgba(58, 236, 236, 0.616);
+.large {
+    height: 5rem;
+    width: 5rem;
 }
 
-.error {
-    background-color: rgb(238, 105, 105);
+.medium {
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
-.success {
-    background-color: rgb(26, 221, 26);
-}
-
-.warning {
-    background-color: rgb(212, 212, 100);
-}
-
-
-/* outline alert */
-
-.outline-primary {
-    color: blue;
-    border: 2px solid blue;
-    background-color: white;
-    font-weight: bolder;
-}
-
-.outline-error {
-    color: red;
-    border: 2px solid red;
-    background-color: white;
-    font-weight: bolder;
-}
-
-.outline-success {
-    color: green;
-    border: 2px solid green;
-    background-color: white;
-    font-weight: bolder;
-}
-
-.outline-warning {
-    color: yellow;
-    border: 2px solid yellow;
-    background-color: white;
-    font-weight: bolder;
+.small {
+    width: 2rem;
+    height: 2rem;
 }
 
 
