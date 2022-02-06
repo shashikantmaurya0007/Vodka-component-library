@@ -190,6 +190,24 @@ html {
     right: 0.01rem;
 }
 
+.avatar.square.large+.status-badge {
+    position: absolute;
+    bottom: -0.2rem;
+    right: -0.2rem;
+}
+
+.avatar.square.medium+.status-badge {
+    position: absolute;
+    bottom: -0.2rem;
+    right: -0.2rem;
+}
+
+.avatar.square.small+.status-badge {
+    position: absolute;
+    bottom: -0.2rem;
+    right: -0.2rem;
+}
+
 .online {
     background-color: green;
 }
@@ -214,6 +232,13 @@ html {
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
+}
+
+
+/* square avatar */
+
+.square {
+    border-radius: 0.6rem;
 }
 
 .large {
