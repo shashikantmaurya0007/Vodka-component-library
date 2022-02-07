@@ -5,7 +5,6 @@
     width: max-content;
     position: relative;
     margin-left: 0.5rem;
-    background-color: pink;
 }
 
 .avatar.large+.status-badge {
@@ -83,7 +82,7 @@
     border-radius: 50%;
     background-color: green;
     position: absolute;
-    top: -1rem;
+    top: -0.8rem;
     right: -1rem;
 }
 
