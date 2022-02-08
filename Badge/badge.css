@@ -1,0 +1,121 @@
+/* badge styling */
+
+@import url(../pageLayout.css);
+.badge {
+    width: max-content;
+    position: relative;
+    margin-left: 0.5rem;
+}
+
+.avatar.large+.status-badge {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.15rem;
+    right: 0.35rem;
+}
+
+.avatar.medium+.status-badge {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.15rem;
+    right: 0.1rem;
+}
+
+.avatar.small+.status-badge {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.1rem;
+    right: 0.01rem;
+}
+
+.avatar.square.large+.status-badge {
+    position: absolute;
+    bottom: -0.2rem;
+    right: -0.2rem;
+}
+
+.avatar.square.medium+.status-badge {
+    position: absolute;
+    bottom: -0.2rem;
+    right: -0.2rem;
+}
+
+.avatar.square.small+.status-badge {
+    position: absolute;
+    bottom: -0.2rem;
+    right: -0.2rem;
+}
+
+.online {
+    background-color: green;
+}
+
+.offline {
+    background-color: gray;
+}
+
+.do-not-disturb {
+    background-color: red;
+}
+
+
+/* icons badge */
+
+.icon-badge {
+    font-size: 1.5rem;
+}
+
+.badge-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top: -0.8rem;
+    right: -1rem;
+}
+
+
+/* avatar style for badge */
+
+.avatar {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+
+/* square avatar */
+
+.square {
+    border-radius: 0.6rem;
+}
+
+.large {
+    height: 5rem;
+    width: 5rem;
+}
+
+.medium {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.small {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* footer */

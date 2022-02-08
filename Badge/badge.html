@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./badge.css" />
+</head>
+
+<body>
+    <nav class="nav-header">
+        <img src="../Images/component-logo.svg" alt="vodka-ui" />
+        <div class="nav-items">
+            <a href="#">Installation</a>
+            <a class="active" href="#">Docs</a>
+            <a href="#">Releases</a>
+        </div>
+    </nav>
+    <section class="left-right-combine">
+        <aside class="index-of-component">
+            <h1 class="index-heading">Components</h1>
+            <ul>
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Avatar</a></li>
+                <li><a href="#">Alert</a></li>
+                <li><a href="#" class="active">Badge</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Card</a></li>
+                <li><a href="#">Image</a></li>
+                <li><a href="#">Input</a></li>
+                <li><a href="#">List</a></li>
+                <li><a href="#">Toast</a></li>
+            </ul>
+        </aside>
+        <section class="right-side-of-page">
+            <main class="content-main">
+                <h1 class="content-heading">Badges</h1>
+                <p class="content-paragraph">
+                    Badges are small circle placed at either top right or bottom right to the image or icon .It can be used to diplay the current staus of user or count of notification recieved.
+                </p>
+                <h1 class="content-heading">Status Badge</h1>
+                <p class="content-paragraph">
+                    status badge can be created by adding
+                    <span class="highlight-word">badge</span> class to the
+                    <span class="highligh-word">div container</span> and add
+                    <span class="highlight-word">avatar class and size class(large,medium,small) to the image
+            </span> and <span class="highlight-word">status-badge</span> class to span and status have three variants
+                    <span class="highlight-word">
+              online , offline , do-not-disturb
+            </span> for desire style.
+                </p>
+                <div class="example-div">
+                    <div class="badge">
+                        <img class="avatar large" src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&au" alt="profile avatar" />
+                        <span class="status-badge online"></span>
+                    </div>
+                    <div class="badge">
+                        <img src="https://www.absolut.com/globalassets/images/products/absolut-citron/absolut-citron_1x1.jpg" class="avatar medium" alt="profile avatar" />
+                        <span class="status-badge offline"></span>
+                    </div>
+                    <div class="badge">
+                        <img src="https://www.ciroc.com/images/en-row/recipes/blue-stone-champagne-cosmo-bottle-drinks.webp" class="avatar small" alt="profile pic" />
+                        <span class="status-badge do-not-disturb"></span>
+                    </div>
+                </div>
+                <div class="carbon-code">
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520large%2522%2520alt%253D%2522profile%2520avatar%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520online%2522%253E%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520medium%2522%2520alt%253D%2522profile%2520avatar%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520offline%2522%253E%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520small%2522%2520alt%253D%2522profile%2520avatar%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520do-not-disturb%2522%253E%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E"
+                        style="
+                width: 97%;
+                height: 385px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              " sandbox="allow-scripts allow-same-origin">
+            </iframe>
+                </div>
+                <!-- square badge -->
+                <h1 class="content-heading">Square Badge</h1>
+                <p class="content-paragraph">
+                    square status badge can be created by adding
+                    <span class="highlight-word">badge</span> class to the
+                    <span class="highligh-word">div container</span> and add
+                    <span class="highlight-word">avatar class along with square and size class(large,medium,small)
+              to the image
+            </span> and <span class="highlight-word">status-badge</span> class to span and status have three variants
+                    <span class="highlight-word">
+              online , offline , do-not-disturb
+            </span> for desire style.
+                </p>
+
+                <div class="example-div">
+                    <div class="badge">
+                        <img class="avatar square large" src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&au" alt="profile avatar" />
+                        <span class="status-badge online"></span>
+                    </div>
+                    <div class="badge">
+                        <img src="https://www.absolut.com/globalassets/images/products/absolut-citron/absolut-citron_1x1.jpg" class="avatar square medium" alt="profile avatar" />
+                        <span class="status-badge offline"></span>
+                    </div>
+                    <div class="badge">
+                        <img src="https://www.ciroc.com/images/en-row/recipes/blue-stone-champagne-cosmo-bottle-drinks.webp" class="avatar square small" alt="profile pic" />
+                        <span class="status-badge do-not-disturb"></span>
+                    </div>
+                </div>
+                <div class="carbon-code">
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520squarenlarge%2522%2520alt%253D%2522profile%2520avatar%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520online%2522%253E%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520square%2520medium%2522%2520alt%253D%2522profile%2520avatar%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520offline%2522%253E%253C%252Fspan%253E%250A%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520square%2520small%2522%2520alt%253D%2522profile%2520avatar%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520do-not-disturb%2522%253E%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E"
+                        style="
+                width: 96%;
+                height: 385px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              " sandbox="allow-scripts allow-same-origin">
+            </iframe>
+                </div>
+                <!-- icons badge -->
+                <h1 class="content-heading">Icons badge</h1>
+                <p class="content-paragraph">
+                    To create icon badge create div container and add class
+                    <span class="highlight-word">badge</span> and add icon within span tag and give class
+                    <span class="highlight-word"> icon-badge</span> to it and give class
+                    <span class="highlight-word">badge-up</span> to span tag whose value will go above icon
+                </p>
+                <div class="example-div">
+                    <div class="badge">
+                        <span class="icon-badge"> <i class="bi bi-heart"></i></span>
+                        <span class="badge-up">15</span>
+                    </div>
+                    <div class="badge">
+                        <span class="icon-badge">
+                <i class="bi bi-cart-dash-fill"></i
+              ></span>
+                        <span class="badge-up">15</span>
+                    </div>
+                </div>
+                <div class="carbon-code">
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253E%2520%253Ci%2520class%253D%2522bi%2520bi-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-up%2522%253E15%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        style="
+                width: 97%;
+                height: 241px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              " sandbox="allow-scripts allow-same-origin">
+            </iframe>
+                </div>
+            </main>
+            <footer>
+                <a href="#">
+                    <-Alert</a>
+                        <a href="#">Button-></a>
+            </footer>
+            <i class="bi bi-arrow-up-circle direct-upward"></i>
+        </section>
+    </section>
+    <script src="../Alert/alert.js"></script>
+</body>
+
+</html>
