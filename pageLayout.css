@@ -143,10 +143,12 @@ html {
 
 .example-div {
     display: flex;
+    flex-wrap: wrap;
     width: 96%;
     justify-content: center;
     align-items: center;
     min-height: 8rem;
+    gap: 4px;
     background-color: #ebebeb;
     border-radius: 1.2rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;

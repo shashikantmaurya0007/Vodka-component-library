@@ -1,0 +1,147 @@
+@import url(../pageLayout.css);
+:root {
+    --primary-button-color: #22968c;
+    --primary-hover-color: #277b7c;
+    --secondary-button-color: #9d8da5;
+    --secondary-hover-color: #56445d;
+    --hover-font-color: white;
+}
+
+.btn {
+    width: max-content;
+    height: max-content;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: blue;
+    margin-left: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-button-color);
+    color: white;
+}
+
+.btn.btn-primary.btn-outline {
+    background: transparent;
+    border: 1px solid var(--primary-button-color);
+    color: var(--primary-button-color);
+}
+
+.btn.btn-primary.btn-icon {
+    font-size: 1.4rem;
+    background: transparent;
+    color: var(--primary-button-color);
+}
+
+.btn.btn-primary.btn-solid:hover {
+    background-color: var(--primary-hover-color);
+    transition: 0.2s smooth;
+}
+
+.btn.btn-primary.btn-outline:hover {
+    background-color: var(--primary-button-color);
+    color: var(--hover-font-color);
+}
+
+.btn.btn-primary.btn-icon:hover {
+    color: var(--primary-hover-color);
+    transition: 0.2s ease;
+}
+
+.btn.btn-primary.btn-icon-text>i {
+    margin-left: 0.4rem;
+}
+
+.btn-icon-text:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.btn.btn-primary.btn-link {
+    background: transparent;
+    color: var(--primary-button-color);
+    border-bottom: 2px solid var(--primary-button-color);
+    border-radius: 0px;
+}
+
+.btn.btn-primary.btn-link:hover {
+    color: var(--primary-hover-color);
+    border-bottom: 2px solid var(--primary-hover-color);
+}
+
+
+/* secondaryButton */
+
+.btn-secondary {
+    background-color: var(--secondary-button-color);
+}
+
+.btn.btn-secondary.btn-outline {
+    background: transparent;
+    border: 1px solid var(--secondary-button-color);
+    color: var(--secondary-button-color);
+}
+
+.btn.btn-secondary.btn-icon {
+    font-size: 1.4rem;
+    background: transparent;
+    color: var(--secondary-button-color);
+}
+
+.btn.btn-secondary.btn-solid:hover {
+    background-color: var(--secondary-hover-color);
+    transition: 0.2s smooth;
+    color: var(--hover-font-color);
+}
+
+.btn.btn-secondary.btn-outline:hover {
+    background-color: var(--secondary-button-color);
+    color: var(--hover-font-color);
+}
+
+.btn.btn-secondary.btn-icon:hover {
+    color: var(--secondary-hover-color);
+    transition: 0.2s ease;
+}
+
+.btn.btn-secondary.btn-icon-text>i {
+    margin-left: 0.4rem;
+}
+
+.btn-secondary.btn-icon-text:hover {
+    background-color: var(--secondary-hover-color);
+    color: var(--hover-font-color);
+}
+
+.btn.btn-secondary.btn-link {
+    background: transparent;
+    color: var(--secondary-button-color);
+    border-bottom: 2px solid var(--secondary-button-color);
+    border-radius: 0px;
+}
+
+.btn.btn-secondary.btn-link:hover {
+    color: var(--secondary-hover-color);
+    border-bottom: 2px solid var(--secondary-hover-color);
+}
+
+
+/* float button */
+
+.btn.btn-float {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--primary-button-color);
+}
+
+.btn.btn-float:hover {
+    background-color: var(--primary-hover-color);
+}
