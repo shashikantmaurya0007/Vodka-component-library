@@ -145,3 +145,13 @@
 .btn.btn-float:hover {
     background-color: var(--primary-hover-color);
 }
+
+.btn.btn-disabled {
+    opacity: 0.4;
+    cursor: auto;
+    touch-action: none;
+}
+
+.btn.btn-disabled:hover {
+    opacity: 0.4;
+}
