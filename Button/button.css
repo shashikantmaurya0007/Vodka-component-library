@@ -10,11 +10,11 @@
 .btn {
     width: max-content;
     height: max-content;
-    padding: 0.5rem 1rem;
-    border-radius: 0.3rem;
+    padding: 5px 10px;
+    border-radius: 5px;
     border: none;
     background-color: blue;
-    margin-left: 0.5rem;
+    margin-left: 3px;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
