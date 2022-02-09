@@ -19,7 +19,9 @@
     font-style: italic;
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -28,7 +30,7 @@
 html {
     background-color: var(--vodka-UI-background-color);
     scroll-behavior: smooth;
-    /* font-size: 85%; */
+    /* font-size: 65%; */
 }
 
 
@@ -38,6 +40,7 @@ html {
     display: flex;
     height: 8rem;
     align-items: center;
+    width: 100vw;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -154,6 +157,7 @@ html {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    z-index: -5;
 }
 
 
