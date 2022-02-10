@@ -30,6 +30,7 @@
 html {
     background-color: var(--vodka-UI-background-color);
     scroll-behavior: smooth;
+    /* font-size: 70%; */
 }
 
 
@@ -86,7 +87,7 @@ html {
     top: 0;
     left: 0;
     /* background-color: white; */
-    /* display: none; */
+    display: none;
 }
 
 .index-heading {
@@ -198,13 +199,4 @@ footer a:hover {
     bottom: 10%;
     right: 1%;
     opacity: 0.5;
-}
-
-@media screen and (max-width: 768px) {
-    .index-of-component {
-        display: none;
-    }
-    html {
-        font-size: 65%;
-    }
 }

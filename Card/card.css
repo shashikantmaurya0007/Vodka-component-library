@@ -4,6 +4,9 @@
     --card-lower-background-color: #f5f5f5;
     --card-lower-border-color: #474747;
     --image-container-color: white;
+    --card-border-color: black;
+    --card-strike-color: red;
+    --card-success-color: green;
 }
 
 .header-description {
@@ -21,50 +24,36 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 23rem;
-    min-height: 28rem;
+    width: 20rem;
     border-radius: 10px;
-    margin: 1rem 0;
     background-color: var(--card-lower-background-color);
-    border: 1px solid black;
+    padding: 1rem 1rem 1.5rem;
 }
 
 .card .img-container {
-    height: 16rem;
+    height: 13rem;
     background-color: var(--image-container-color);
     border-radius: 10px 10px 0 0;
-    width: 22.8rem;
-    margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 .card .img-container img {
-    display: block;
-    width: 20rem;
+    width: 100%;
     object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-    margin: 1rem auto;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .lower-card {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
     background-color: var(--card-lower-background-color);
-    margin: 0 1rem;
-    width: 21rem;
 }
 
 .card.vertical .btn-container {
-    position: absolute;
-    width: inherit;
     display: flex;
-    align-items: center;
-    /* justify-content: space-evenly; */
-    margin-top: 1.5rem;
-    gap: 10px;
-    bottom: 1.5rem;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -92,22 +81,71 @@
     padding: 0 1rem;
     width: max-content;
     top: 1.5rem;
+    left: -0.10rem;
     z-index: 3;
     opacity: 0.7;
     border: 1px solid var(--primary-button-color);
     background-color: var(--primary-button-color);
 }
 
-@media screen and (max-width: 768px) {
+
+/* shpping card with shadow */
+
+.card_shadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.card.shopping_card.card_shadow.vertical .card-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card.shopping_card.card_shadow.vertical .card-description strike {
+    color: red;
+}
+
+.card.shopping_card.card_shadow.vertical .card-description .product_price {
+    color: var(--card-success-color)
+}
+
+.card.shopping_card.card_shadow.vertical .card-description strike+.card_discount {
+    background-color: var(--card-success-color);
+    border-radius: 10%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+}
+
+.card.shopping_card.card_shadow.vertical .card-description .product_rating {
+    background-color: var(--card-success-color);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 4px;
+    border: 4px solid var(--primary-button-color)
+}
+
+
+/* card with dismiss */
+
+.card.shopping_card.card_shadow.vertical .card_dismiss a {
+    position: absolute;
+    right: -.25rem;
+    top: -0.2rem;
+}
+
+
+/* @media screen and (max-width: 768px) {
     .card.vertical .btn-container {
         position: absolute;
         width: inherit;
         display: flex;
         align-items: center;
-        /* justify-content: space-evenly; */
-        gap: 0px;
-        bottom: 1.5rem;
-        margin-top: 5rem;
-        /* flex-wrap: wrap; */
-    }
-}
+        /* justify-content: space-evenly; 
+
+flex-wrap: wrap;}

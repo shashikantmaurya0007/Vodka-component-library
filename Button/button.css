@@ -10,11 +10,10 @@
 .btn {
     width: max-content;
     height: max-content;
-    padding: 5px 10px;
+    padding: 2px 8px;
     border-radius: 5px;
     border: none;
     background-color: blue;
-    margin-left: 3px;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
@@ -32,7 +31,7 @@
 }
 
 .btn.btn-primary.btn-icon {
-    font-size: 1.4rem;
+    font-size: 1;
     background: transparent;
     color: var(--primary-button-color);
 }
