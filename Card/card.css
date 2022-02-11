@@ -1,0 +1,248 @@
+@import url(../pageLayout.css);
+@import url(../Button/button.css);
+:root {
+    --card-lower-background-color: #f5f5f5;
+    --card-lower-border-color: #474747;
+    --image-container-color: white;
+    --card-border-color: black;
+    --card-strike-color: red;
+    --card-success-color: green;
+}
+
+.header-description {
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.card-description {
+    font-family: "Poppins", sans-serif;
+    opacity: 0.9;
+}
+
+.card.vertical {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 20rem;
+    border-radius: 10px;
+    background-color: var(--card-lower-background-color);
+    padding: 1rem 1rem 1.5rem;
+}
+
+.card .img-container {
+    height: 13rem;
+    background-color: var(--image-container-color);
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.card .img-container img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.lower-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--card-lower-background-color);
+}
+
+.card.vertical .btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* vertical card with badge */
+
+.card.card_badge.vertical::before {
+    position: absolute;
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--primary-button-color);
+    transform: rotate(45deg);
+    top: 2rem;
+    left: -1rem;
+    z-index: -1;
+}
+
+.card_text_badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    height: 2rem;
+    padding: 0 1rem;
+    width: max-content;
+    top: 1.5rem;
+    left: -0.1rem;
+    z-index: 3;
+    opacity: 0.7;
+    border: 1px solid var(--primary-button-color);
+    background-color: var(--primary-button-color);
+}
+
+
+/* shpping card with shadow */
+
+.card_shadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.card.shopping_card.card_shadow.vertical .card-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card.shopping_card.card_shadow.vertical .card-description strike {
+    color: red;
+}
+
+.card.shopping_card.card_shadow.vertical .card-description .product_price {
+    color: var(--card-success-color);
+}
+
+.card.shopping_card.card_shadow.vertical .card-description strike+.card_discount {
+    background-color: var(--card-success-color);
+    border-radius: 10%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+}
+
+.card.shopping_card.card_shadow.vertical .card-description .product_rating {
+    background-color: var(--card-success-color);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 4px;
+    border: 4px solid var(--primary-button-color);
+}
+
+
+/* card with dismiss */
+
+.card.shopping_card.card_shadow.vertical .card_dismiss a {
+    position: absolute;
+    right: -0.25rem;
+    top: -0.2rem;
+}
+
+
+/* card with overlay text */
+
+.card .card-overlay-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+.card .card-overlay-text span {
+    background-color: var(--primary-button-color);
+   
+    padding: 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card.text-only-card.vertical .img-container {
+    display: none;
+}
+
+.card.horizontal {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 32rem;
+    border-radius: 10px;
+    background-color: var(--card-lower-background-color);
+    padding: 1rem 1rem 1.5rem;
+}
+
+.card.horizontal .img-container {
+    height: 13rem;
+    max-width: 13rem;
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+}
+
+.card.horizontal .img-container img {
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+
+.card.horizontal .lower-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.card.horizontal .lower-card .card-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card.horizontal .lower-card .card-description .product_price {
+    color: var(--card-success-color);
+}
+
+.card.horizontal .lower-card .card-description strike {
+    color: red;
+}
+
+.card.horizontal .lower-card .card-description .card_discount {
+    background-color: var(--card-success-color);
+    border-radius: 10%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+}
+
+.card.horizontal .lower-card .card-description .product_rating {
+    background-color: var(--card-success-color);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 4px;
+    border: 4px solid var(--primary-button-color);
+}
+
+
+/* @media screen and (max-width: 768px) {
+    .card.vertical .btn-container {
+        position: absolute;
+        width: inherit;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-evenly; 
+
+/* flex-wrap: wrap; */
