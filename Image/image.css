@@ -1,0 +1,27 @@
+@import url(../pageLayout.css);
+.image_responsive_container {
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+.img-responsive {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.img-rounded {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 12px;
+}
+
+.img-circle {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+}
