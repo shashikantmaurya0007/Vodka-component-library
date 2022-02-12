@@ -1,0 +1,36 @@
+@import url(../pageLayout.css);
+:root {
+    --list-background-color: #ffffff;
+    --list-hover-bgColor: #f5f5f5;
+}
+
+.sim-unList {
+    width: 13rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--list-background-color);
+    border-radius: 4px;
+}
+
+.example-div div {
+    padding: 2rem;
+}
+
+.sim-unList li {
+    padding: 12px 0;
+    padding-left: 2rem;
+}
+
+.sim-unList li:hover {
+    background-color: var(--list-hover-bgColor);
+}
+
+.sim-unList .list-heading {
+    font-weight: bold;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    border-bottom: 1px solid lightgray;
+}
