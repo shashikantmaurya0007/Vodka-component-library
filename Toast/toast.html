@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./toast.css" />
+</head>
+
+<body>
+    <nav class="nav-header">
+        <img src="../Images/component-logo.svg" alt="vodka-ui" />
+        <div class="nav-items">
+            <a href="#">Installation</a>
+            <a class="active" href="#">Docs</a>
+            <a href="#">Releases</a>
+        </div>
+    </nav>
+    <section class="left-right-combine">
+        <aside class="index-of-component">
+            <h1 class="index-heading">Components</h1>
+            <ul>
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Avatar</a></li>
+                <li><a href="#">Alert</a></li>
+                <li><a href="#">Badge</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Card</a></li>
+                <li><a href="#">Image</a></li>
+                <li><a href="#">Input</a></li>
+                <li><a href="#">List</a></li>
+
+                <li><a href="#" class="active">Toast</a></li>
+                <li><a href="#">Slider</a></li>
+            </ul>
+        </aside>
+        <p class="toast">
+            Product Added to The cart successfully!
+            <a class="btn btn-primary btn-icon">
+                <i class="bi bi-x-circle-fill"></i>
+            </a>
+        </p>
+        <section class="right-side-of-page">
+            <main class="content-main">
+                <h1 class="content-heading">Toast</h1>
+                <p class="content-paragraph">
+                    Toast are messages which stays on screen for 2-3 seconds it gives the status of the action. for example:-product added to the cart
+                </p>
+                <div class="example-div">
+                    <a id="generate-toast" href="#" class="btn btn-primary btn-solid">Generate Toast</a
+            >
+          </div>
+          <div class="carbon-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cp%2520class%253D%2522toast%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Product%2520Added%2520to%2520The%2520cart%2520successfully%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522btn%2520btn-primary%2520btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-x-circle-fill%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E"
+              style="
+                width: 97%;
+                height: 277px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <p class="content-paragraph">Javascript code</p>
+          <div class="carbon-code">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520toast%2520%253D%2520document.querySelector%28%2522.toast%2522%29%253B%250Atoast.style.display%2520%253D%2520%2522none%2522%253B%250Aconst%2520toastBtn%2520%253D%2520document.getElementById%28%2522generate-toast%2522%29%253B%250AtoastClosebtn%2520%253D%2520document.querySelector%28%2522.toast%2520a%2522%29%253B%250AtoastClosebtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520toast.style.display%2520%253D%2520%2522none%2522%253B%250A%257D%29%253B%250A%250AtoastBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520toast.style.display%2520%253D%2520%2522block%2522%253B%250A%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520toast.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%257D%252C%25202200%29%253B%250A%257D%29%253B"
+              style="
+                width: 97%;
+                height: 421px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </main>
+        <footer>
+          <a href="#"> <-List</a>
+                    <a href="#">Slider-></a>
+                    </footer>
+                    <i class="bi bi-arrow-up-circle direct-upward"></i>
+        </section>
+    </section>
+    <script src="../Alert/alert.js"></script>
+    <script src="./toast.js"></script>
+</body>
+
+</html>
