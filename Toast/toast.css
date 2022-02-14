@@ -1,0 +1,22 @@
+@import url(../pageLayout.css);
+@import url(../Button/button.css);
+.toast {
+    width: max-content;
+    background-color: var(--primary-button-color);
+    color: whitesmoke;
+    padding: 1rem;
+    border-radius: 8px;
+    position: fixed;
+    top: 8rem;
+    display: flex;
+    align-items: center;
+    right: 1rem;
+}
+
+.toast a i {
+    color: white;
+}
+
+.toast a i:hover {
+    color: black;
+}
