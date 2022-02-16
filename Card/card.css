@@ -173,7 +173,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 32rem;
     border-radius: 10px;
     background-color: var(--card-lower-background-color);
