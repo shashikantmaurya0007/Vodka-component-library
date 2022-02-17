@@ -1,0 +1,43 @@
+@import url(./pageLayout.css);
+.nav-header {
+    position: static;
+}
+
+:root {
+    --index-primary-color: #22968c;
+    --index-secondary-color: #9d8da5;
+    --index-primary-hover-color: #277b7c;
+    --index-secodary-hover-color: #56445d;
+}
+
+.index-main {
+    padding: 1rem;
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    /* background-color: green; */
+    /* flex-wrap: wrap; */
+}
+
+index main 100vw index-main-flex-left 50% .index-main-flex-left {
+    /* width: 50%; */
+}
+
+.index-main-first {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: green;
+}
+
+.index-main-right {
+    background-color: red;
+    /* width: 50%; */
+}
+
+.index-main-right img {
+    /* width: 100%; */
+    object-fit: fill;
+    border: 2px solid black;
+}
