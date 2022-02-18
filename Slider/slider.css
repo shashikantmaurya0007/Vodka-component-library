@@ -27,7 +27,7 @@
     cursor: pointer;
 }
 
-. .slider::-moz-range-thumb {
+.slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     background: #04aa6d;

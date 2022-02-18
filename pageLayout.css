@@ -30,7 +30,7 @@
 html {
     background-color: var(--vodka-UI-background-color);
     scroll-behavior: smooth;
-    /* font-size: 70%; */
+    font-size: 100%;
 }
 
 
@@ -146,6 +146,7 @@ html {
     color: var(--vodka-UI-text-color);
     font-weight: 500;
     opacity: 0.7;
+    line-height: 1.5rem;
 }
 
 .example-div {
@@ -203,4 +204,16 @@ footer a:hover {
     bottom: 10%;
     right: 1%;
     opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+    .index-of-component {
+        display: none;
+    }
+    .nav-header {
+        font-size: 0.8rem;
+    }
+    html {
+        font-size: 85%;
+    }
 }
