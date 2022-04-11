@@ -1,0 +1,63 @@
+.heading {
+    font-weight: 750;
+}
+
+.h-large_ {
+    font-size: 2rem;
+}
+
+.h-medium_ {
+    font-size: 1rem;
+}
+
+.h-small_ {
+    font-size: 0.8rem;
+}
+
+.heading-bold {
+    font-weight: 1000;
+}
+
+.heading-light {
+    font-weight: 600;
+}
+
+.lt-space-sm {
+    letter-spacing: 1px;
+}
+
+.lt-space-md {
+    letter-spacing: 2px;
+}
+
+.lt-space-lg {
+    letter-spacing: 4px;
+}
+
+.text_grey {
+    color: gray;
+}
+
+.text_success {
+    color: green;
+}
+
+.text_failure {
+    color: red;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.text {
+    width: 90%;
+}
