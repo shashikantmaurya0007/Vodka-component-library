@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./rating.css" />
+    <link rel="stylesheet" href="../pageLayout.css" />
+</head>
+
+<body>
+    <nav class="nav-header">
+        <img src="../Images/component-logo.svg" alt="vodka-ui" />
+        <div class="nav-items">
+            <a href="#">Installation</a>
+            <a class="active" href="#">Docs</a>
+            <a href="#">Releases</a>
+        </div>
+    </nav>
+    <section class="left-right-combine">
+        <aside class="index-of-component">
+            <h1 class="index-heading">Components</h1>
+            <ul>
+                <li><a href="../Introduction/introduction.html">Introduction</a></li>
+                <li><a href="../Avatar/avatar.html">Avatar</a></li>
+                <li><a href="../Alert/alert.html">Alert</a></li>
+                <li><a href="../Badge/badge.html">Badge</a></li>
+                <li><a href="../Button/button.html">Button</a></li>
+                <li><a href="../Card/card.html">Card</a></li>
+                <li><a href="../Image/image.html">Image</a></li>
+                <li><a href="../Input/input.html">Input</a></li>
+                <li><a href="../List/list.html">List</a></li>
+                <li><a href="../Toast/toast.html">Toast</a></li>
+                <li><a href="../Slider/slider.html">Slider</a></li>
+                <li>
+                    <a href="../Text_Utilities/text_utilities.html">Text utilities</a>
+                </li>
+                <li>
+                    <a href="../Navigation/Navigation.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="../Modal/modal.html">Modal</a>
+                </li>
+                <li>
+                    <a class="active" href="../Rating/rating.html">Rating</a>
+                </li>
+            </ul>
+        </aside>
+
+        <section class="right-side-of-page">
+            <main class="content-main">
+                <h1 class="content-heading">Rating</h1>
+                <p class="content-paragraph">
+                    Rating helps user to rate the product or experience of application.
+                </p>
+
+                <div class="example-div">
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                </div>
+                <div class="carbon-code">
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=twilight&wt=none&l=javascript&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522rate%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star5%2522%2520name%253D%2522rate%2522%2520value%253D%25225%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star5%2522%2520title%253D%2522text%2522%253E5%2520stars%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star4%2522%2520name%253D%2522rate%2522%2520value%253D%25224%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star4%2522%2520title%253D%2522text%2522%253E4%2520stars%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star3%2522%2520name%253D%2522rate%2522%2520value%253D%25223%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star3%2522%2520title%253D%2522text%2522%253E3%2520stars%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star2%2522%2520name%253D%2522rate%2522%2520value%253D%25222%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star2%2522%2520title%253D%2522text%2522%253E2%2520stars%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star1%2522%2520name%253D%2522rate%2522%2520value%253D%25221%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star1%2522%2520title%253D%2522text%2522%253E1%2520star%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E"
+                        style="
+                width: 97%;
+                height: 409px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              " sandbox="allow-scripts allow-same-origin">
+            </iframe>
+                </div>
+            </main>
+            <footer>
+                <a href="../Slider/slider.html">
+                    <-slider</a>
+                        <a href="#">Navigation-></a>
+            </footer>
+            <i class="bi bi-arrow-up-circle direct-upward"></i>
+        </section>
+    </section>
+    <script src="../Alert/alert.js"></script>
+</body>
+
+</html>
+a
