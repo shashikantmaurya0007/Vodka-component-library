@@ -1,0 +1,25 @@
+@import "../Button/button.css";
+.modal {
+    width: 30rem;
+    background-color: whitesmoke;
+    height: max-content;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title_cross_btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0.5rem;
+}
+
+.modal_desc {
+    padding: 0.3rem 0.5rem;
+}
+
+.modal_btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.3rem 0.5rem;
+    gap: 20px;
+}
