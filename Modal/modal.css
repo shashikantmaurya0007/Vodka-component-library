@@ -1,6 +1,6 @@
 @import "../Button/button.css";
 .modal {
-    width: 30rem;
+    width: 18rem;
     background-color: whitesmoke;
     height: max-content;
     margin: 1rem;
