@@ -1,0 +1,28 @@
+.navbar_ {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0.4rem 0.1rem;
+    border-radius: 1rem;
+}
+
+.nav_logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    font-size: 1rem;
+}
+
+.navbar_search {
+    padding: 0.2rem 0.5rem;
+    border: 0px;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+.icon_container {
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+}
